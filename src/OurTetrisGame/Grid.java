@@ -84,7 +84,8 @@ public class Grid {
         // Draw cells
         for (int row = 0; row < HEIGHT; row++) {
             for (int col = 0; col < WIDTH; col++) {
-                if (grid[row][col] != null) { //occupied
+                if (grid[row][col] != null) 
+                    { //occupied
                     gc.setFill(grid[row][col]); // Use the stored color
                     gc.fillRect(col * 30, row * 30, 30, 30);
                 } else {
